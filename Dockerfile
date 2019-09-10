@@ -1,6 +1,6 @@
-FROM rust:%%RUST_VSN%%-slim as rust
+FROM rust:1.37.0-slim as rust
 
-FROM elixir:%%ELIXIR_VSN%%
+FROM elixir:1.9.1
 RUN set -eux; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
